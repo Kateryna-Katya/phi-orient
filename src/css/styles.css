@@ -532,3 +532,64 @@ img { max-width: 100%; display: block; }
   .image-wrapper img { width: 100%; height: 100%; object-fit: cover; }
   .cookie-popup { left: 10px; right: 10px; max-width: none; }
 }
+/* --- LEGAL PAGES STYLES (privacy.html, terms.html, etc.) --- */
+.pages {
+  padding-top: calc(var(--header-height) + 60px); /* Отступ под хедером */
+  padding-bottom: 100px;
+  background-color: var(--color-bg);
+}
+
+.pages h1 {
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  color: #fff;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 15px;
+}
+
+.pages h2 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: var(--color-accent); /* Фирменный акцент Indigo */
+}
+
+.pages p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+}
+
+.pages ul {
+  list-style-type: disc;
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+
+.pages li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+  margin-bottom: 8px;
+}
+
+.pages strong {
+  color: #fff; /* Выделение ключевых терминов */
+}
+
+.pages a {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .pages h1 {
+      font-size: 2rem;
+  }
+  .pages h2 {
+      font-size: 1.5rem;
+  }
+}
