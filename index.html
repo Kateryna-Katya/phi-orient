@@ -1,55 +1,375 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/phi-orient/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/phi-orient/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/phi-orient/assets/styles-guStct1H.css">
-  </head>
-  <body>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phi-Orient | Разработка AI-ассистентов и ботов</title>
+    <meta name="description" content="Инновационная технология разработки ботов: от простых чатов до сложных AI-ассистентов.">
+
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.0.45/dist/lenis.css">
+  <script type="module" crossorigin src="/phi-orient/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/phi-orient/assets/styles-6VASjJv-.css">
+</head>
+
+  <body class="page">
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="/" class="header__logo">
+          Phi-Orient<span class="header__dot">.</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="header__nav">
+          <ul class="header__menu">
+              <li class="header__item"><a href="#hero" class="header__link">Главная</a></li>
+              <li class="header__item"><a href="#about" class="header__link">О платформе</a></li>
+              <li class="header__item"><a href="#solutions" class="header__link">Решения</a></li>
+              <li class="header__item"><a href="#innovations" class="header__link">Инновации</a></li>
+              <li class="header__item"><a href="#blog" class="header__link">Блог</a></li>
+              <li class="header__item"><a href="#career" class="header__link">Карьера</a></li>
+              <li class="header__item"><a href="#faq" class="header__link">FAQ</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--primary">
+              Начать сейчас
+          </a>
+          <button class="header__burger" aria-label="Открыть меню">
+              <span></span>
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
 
-
-    <main>
+    <main class="main" id="smooth-wrapper">
       <!-- Loads the specified .html file -->
-      
+      <section id="hero" class="hero section">
+  <div class="container hero__container">
+      <div class="hero__content">
+          <div class="hero__label">
+              <span class="status-dot"></span> Платформа уже доступна в Европе
+          </div>
+          <h1 class="hero__title">
+              AI-инструменты<br>
+              <span class="text-gradient">для реальных задач</span>
+          </h1>
+          <p class="hero__desc">
+              Разработка ботов от простых чатиков до AI-ассистентов.
+              Решения, которые меняют правила игры.
+          </p>
+          <div class="hero__btns">
+              <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+              <a href="#about" class="btn btn--outline">Узнать детали</a>
+          </div>
+      </div>
+      <div class="hero__visual">
+          <div class="glowing-orb"></div>
+      </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+      <div class="grid-2">
+          <div class="about__text" data-animate="fade-right">
+              <h2 class="section-title">Технология нового поколения</h2>
+              <p class="section-desc">
+                  Мы создаем цифровую инфраструктуру, которая работает на вас.
+                  Наши алгоритмы позволяют автоматизировать рутину и масштабировать бизнес без лишних затрат.
+              </p>
+              <ul class="check-list">
+                  <li><i data-lucide="check-circle"></i> Быстрый и лёгкий старт</li>
+                  <li><i data-lucide="check-circle"></i> Удобная адаптация без сложностей</li>
+                  <li><i data-lucide="check-circle"></i> Экспертная поддержка на всех этапах</li>
+              </ul>
+          </div>
+          <div class="about__image" data-animate="fade-left">
+              <div class="image-wrapper">
+                  <img src="img/placeholder.png" alt="AI Interface" loading="lazy">
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="solutions" class="section bg-darker">
+  <div class="container">
+      <div class="section-header text-center" data-animate="fade-up">
+          <h2 class="section-title">Решения для роста</h2>
+          <p class="section-desc">Стратегия роста на базе инноваций.</p>
+      </div>
+
+      <div class="grid-3">
+          <div class="card" data-animate="fade-up" data-delay="0.1">
+              <div class="card__icon"><i data-lucide="bot"></i></div>
+              <h3 class="card__title">Чат-боты</h3>
+              <p class="card__text">Автоматизация поддержки 24/7. Легко разобраться без опыта.</p>
+          </div>
+          <div class="card" data-animate="fade-up" data-delay="0.2">
+              <div class="card__icon"><i data-lucide="brain-circuit"></i></div>
+              <h3 class="card__title">AI Ассистенты</h3>
+              <p class="card__text">Нейросети, интегрированные в ваш бизнес-процесс.</p>
+          </div>
+          <div class="card" data-animate="fade-up" data-delay="0.3">
+              <div class="card__icon"><i data-lucide="zap"></i></div>
+              <h3 class="card__title">Автоматизация</h3>
+              <p class="card__text">Технология для пассивного дохода и оптимизации ресурсов.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="innovations" class="section">
+  <div class="container">
+      <div class="innovation-banner" data-animate="scale-up">
+          <div class="innovation-content">
+              <h2 class="section-title">Инновационная технология</h2>
+              <p>Воплотите мечты в реальность с помощью наших передовых разработок. Подключение занимает 2 минуты.</p>
+              <a href="#contact" class="btn btn--primary">Запросить доступ</a>
+          </div>
+          <div class="innovation-stats">
+              <div class="stat-item">
+                  <span class="stat-num">99%</span>
+                  <span class="stat-label">Uptime</span>
+              </div>
+              <div class="stat-item">
+                  <span class="stat-num">24/7</span>
+                  <span class="stat-label">Support</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="blog" class="section bg-darker">
+  <div class="container">
+      <h2 class="section-title mb-40" data-animate="fade-up">Блог и Обучение</h2>
+      <div class="grid-3">
+          <article class="blog-card" data-animate="fade-up">
+              <div class="blog-card__img">
+                  <img src="img/placeholder.png" alt="Blog 1">
+              </div>
+              <div class="blog-card__body">
+                  <span class="blog-card__date">12 Окт 2025</span>
+                  <h3 class="blog-card__title">Как AI меняет рынок услуг?</h3>
+                  <a href="#" class="blog-card__link">Читать далее &rarr;</a>
+              </div>
+          </article>
+          <article class="blog-card" data-animate="fade-up" data-delay="0.1">
+              <div class="blog-card__img">
+                  <img src="img/placeholder.png" alt="Blog 2">
+              </div>
+              <div class="blog-card__body">
+                  <span class="blog-card__date">10 Окт 2025</span>
+                  <h3 class="blog-card__title">Практики, применимые уже сегодня</h3>
+                  <a href="#" class="blog-card__link">Читать далее &rarr;</a>
+              </div>
+          </article>
+          <article class="blog-card" data-animate="fade-up" data-delay="0.2">
+              <div class="blog-card__img">
+                  <img src="img/placeholder.png" alt="Blog 3">
+              </div>
+              <div class="blog-card__body">
+                  <span class="blog-card__date">05 Окт 2025</span>
+                  <h3 class="blog-card__title">Программа пассивного дохода с AI</h3>
+                  <a href="#" class="blog-card__link">Читать далее &rarr;</a>
+              </div>
+          </article>
+      </div>
+  </div>
+</section>
+
+<section id="career" class="section">
+  <div class="container">
+      <div class="career-wrapper" data-animate="fade-up">
+          <div class="career-info">
+              <h2 class="section-title">Карьера</h2>
+              <p class="section-desc">Постройте карьеру, которая работает на вас. Мы ищем таланты.</p>
+          </div>
+          <div class="career-list">
+              <div class="career-item">
+                  <div>
+                      <h4>AI Prompt Engineer</h4>
+                      <span>Remote / UK</span>
+                  </div>
+                  <a href="#contact" class="btn btn--outline btn--sm">Apply</a>
+              </div>
+              <div class="career-item">
+                  <div>
+                      <h4>Frontend Developer</h4>
+                      <span>London / Hybrid</span>
+                  </div>
+                  <a href="#contact" class="btn btn--outline btn--sm">Apply</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="faq" class="section bg-darker">
+  <div class="container">
+      <h2 class="section-title text-center mb-40" data-animate="fade-up">FAQ</h2>
+      <div class="accordion" data-animate="fade-up">
+          <div class="accordion__item">
+              <button class="accordion__trigger">
+                  Сколько времени занимает разработка?
+                  <i data-lucide="chevron-down"></i>
+              </button>
+              <div class="accordion__content">
+                  <p>Простые боты создаются за 2-3 дня. Сложные AI-ассистенты требуют от 2 недель.</p>
+              </div>
+          </div>
+          <div class="accordion__item">
+              <button class="accordion__trigger">
+                  Есть ли поддержка после запуска?
+                  <i data-lucide="chevron-down"></i>
+              </button>
+              <div class="accordion__content">
+                  <p>Да, мы предоставляем экспертную поддержку на всех этапах и после релиза.</p>
+              </div>
+          </div>
+          <div class="accordion__item">
+              <button class="accordion__trigger">
+                  Работаете ли вы с юрлицами?
+                  <i data-lucide="chevron-down"></i>
+              </button>
+              <div class="accordion__content">
+                  <p>Мы работаем официально. Предоставляем все необходимые документы.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container contact-container">
+      <div class="contact-text" data-animate="fade-right">
+          <h2 class="section-title">Связаться с нами</h2>
+          <p class="section-desc">Бесплатная консультация по всем вопросам. Заполните форму, и мы свяжемся с вами.</p>
+
+          <div class="contact-info">
+              <div class="ci-item">
+                  <i data-lucide="mail"></i>
+                  <span>hello@phi-orient.blog</span>
+              </div>
+              <div class="ci-item">
+                  <i data-lucide="phone"></i>
+                  <span>+44 20 7946 0123</span>
+              </div>
+          </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-animate="fade-left">
+          <div class="form-group">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" name="name" required placeholder="Иван Петров">
+          </div>
+
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@example.com">
+          </div>
+
+          <div class="form-group">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" required placeholder="Только цифры">
+              <span class="error-msg" id="phoneError">Только цифры разрешены</span>
+          </div>
+
+          <div class="form-group captcha-group">
+              <label id="captchaLabel">Сколько будет 3 + 5?</label>
+              <input type="number" id="captchaInput" required placeholder="?">
+          </div>
+
+          <div class="form-group checkbox-group">
+              <input type="checkbox" id="agree" required>
+              <label for="agree">Я согласен с <a href="./personal-data-policy.html">политикой обработки данных</a></label>
+          </div>
+
+          <button type="submit" class="btn btn--primary w-100">Отправить заявку</button>
+          <div class="form-status" id="formStatus"></div>
+      </form>
+  </div>
+</section>
+
+
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__col">
+              <a href="/" class="footer__logo">Phi-Orient.</a>
+              <p class="footer__desc">
+                  Технология нового поколения для автоматизации бизнеса.
+                  AI-инструменты для реальных задач.
+              </p>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Меню</h3>
+              <ul class="footer__links">
+                  <li><a href="#about">О нас</a></li>
+                  <li><a href="#solutions">Решения</a></li>
+                  <li><a href="#blog">Блог</a></li>
+                  <li><a href="#career">Карьера</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Информация</h3>
+              <ul class="footer__links">
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                  <li><a href="cookies.html">Cookie Policy</a></li>
+                  <li><a href="terms.html">Terms & Conditions</a></li>
+                  <li><a href="return.html">Return Policy</a></li>
+                  <li><a href="disclaimer.html">Disclaimer</a></li>
+                  <li><a href="personal-data-policy.html">Personal Data</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Контакты</h3>
+              <ul class="footer__contacts">
+                  <li>
+                      <i data-lucide="map-pin"></i>
+                      <span>12 Tech City Rd, Shoreditch, London, EC1V 9BD, UK</span>
+                  </li>
+                  <li>
+                      <i data-lucide="phone"></i>
+                      <a href="tel:+442079460123">+44 20 7946 0123</a>
+                  </li>
+                  <li>
+                      <i data-lucide="mail"></i>
+                      <a href="mailto:hello@phi-orient.blog">hello@phi-orient.blog</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="footer__bottom">
+          <p>&copy; 2025 Phi-Orient. Платформа уже доступна в Европе. All rights reserved.</p>
+      </div>
   </div>
 </footer>
+    <div class="cookie-popup" id="cookiePopup">
+      <div class="cookie-content">
+          <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.</p>
+          <button class="btn btn--primary btn--sm" id="acceptCookie">Принять</button>
+      </div>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
 
   </body>

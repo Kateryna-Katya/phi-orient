@@ -5,29 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/phi-orient/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/phi-orient/assets/styles-6VASjJv-.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="container header__container">
+      <a href="/" class="header__logo">
+          Phi-Orient<span class="header__dot">.</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="header__nav">
+          <ul class="header__menu">
+              <li class="header__item"><a href="#hero" class="header__link">Главная</a></li>
+              <li class="header__item"><a href="#about" class="header__link">О платформе</a></li>
+              <li class="header__item"><a href="#solutions" class="header__link">Решения</a></li>
+              <li class="header__item"><a href="#innovations" class="header__link">Инновации</a></li>
+              <li class="header__item"><a href="#blog" class="header__link">Блог</a></li>
+              <li class="header__item"><a href="#career" class="header__link">Карьера</a></li>
+              <li class="header__item"><a href="#faq" class="header__link">FAQ</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="btn btn--primary">
+              Начать сейчас
+          </a>
+          <button class="header__burger" aria-label="Открыть меню">
+              <span></span>
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
-
 
     <main>
       <div class="container">
@@ -39,19 +48,60 @@
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__col">
+              <a href="/" class="footer__logo">Phi-Orient.</a>
+              <p class="footer__desc">
+                  Технология нового поколения для автоматизации бизнеса.
+                  AI-инструменты для реальных задач.
+              </p>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Меню</h3>
+              <ul class="footer__links">
+                  <li><a href="#about">О нас</a></li>
+                  <li><a href="#solutions">Решения</a></li>
+                  <li><a href="#blog">Блог</a></li>
+                  <li><a href="#career">Карьера</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Информация</h3>
+              <ul class="footer__links">
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                  <li><a href="cookies.html">Cookie Policy</a></li>
+                  <li><a href="terms.html">Terms & Conditions</a></li>
+                  <li><a href="return.html">Return Policy</a></li>
+                  <li><a href="disclaimer.html">Disclaimer</a></li>
+                  <li><a href="personal-data-policy.html">Personal Data</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Контакты</h3>
+              <ul class="footer__contacts">
+                  <li>
+                      <i data-lucide="map-pin"></i>
+                      <span>12 Tech City Rd, Shoreditch, London, EC1V 9BD, UK</span>
+                  </li>
+                  <li>
+                      <i data-lucide="phone"></i>
+                      <a href="tel:+442079460123">+44 20 7946 0123</a>
+                  </li>
+                  <li>
+                      <i data-lucide="mail"></i>
+                      <a href="mailto:hello@phi-orient.blog">hello@phi-orient.blog</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="footer__bottom">
+          <p>&copy; 2025 Phi-Orient. Платформа уже доступна в Европе. All rights reserved.</p>
+      </div>
   </div>
 </footer>
-
   </body>
 </html>
